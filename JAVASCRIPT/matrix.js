@@ -9,7 +9,7 @@ canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
 // Create an array of characters
-const characters = ["S", "W", "A", "R", "A", "J","0", "S", "W", "A", "R", "A", "J", "0", "S", "W", "A", "R", "A", "J", "1", "0",];
+const characters = ["S", "W", "A", "R", "A", "J", "0",  "1", "0",];
 
 // Create an array of columns
 const columns = Math.floor(canvasWidth / 20);
