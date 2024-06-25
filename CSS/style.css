@@ -780,4 +780,7 @@ h3 {
     }
 }
 
-
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
