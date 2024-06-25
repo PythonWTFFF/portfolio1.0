@@ -28,16 +28,41 @@ body {
 }
 
 .logo {
-    font-size: 25px;
-    color: rgb(128, 0, 0);
-    text-shadow: 5px 5px 10px black;
-    text-decoration: none;
-    font-weight: 600;
-    pointer-events: none;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    
+    font-size: 30px; /* Increase font size for better visibility */
+    color: rgb(128, 0, 0); /* Dark red color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Softer text shadow */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Semi-bold font */
+    opacity: 0; /* Initially hidden */
+    animation: slideTop 1s ease forwards, fadeIn 0.5s ease 0.5s forwards; /* Slide and fade-in animation */
+    animation-delay: 1s; /* Delay to sync with other animations */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and text-shadow */
 }
+
+.logo:hover {
+    color: #ed0000; /* Red color on hover */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .navbar a {
     display: inline-block;
