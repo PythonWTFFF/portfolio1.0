@@ -58,7 +58,7 @@ function init() {
             isGoing = false;
         }
         globalCount++;
-    }, 5);
+    }, 35);
 }
 
 word.addEventListener('mouseenter', init);
